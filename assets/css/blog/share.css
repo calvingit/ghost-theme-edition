@@ -36,3 +36,11 @@
 .share-link-twitter {
     background-color: var(--twitter-color);
 }
+
+.share-link-github {
+    background-color: var(--github-color);
+}
+
+.share-link-weibo {
+    background-color: var(--weibo-color);
+}
