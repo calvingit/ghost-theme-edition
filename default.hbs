@@ -74,14 +74,19 @@
         <div class="gh-head-actions">
             <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
             <div class="social">
-                {{#if @site.facebook}}
-                    <a class="social-item social-item-facebook" href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        {{> "icons/facebook"}}
-                    </a>
-                {{/if}}
                 {{#if @site.twitter}}
                     <a class="social-item social-item-twitter" href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                         {{> "icons/twitter"}}
+                    </a>
+                {{/if}}
+                {{#if @custom.github_account}}
+                    <a class="social-item social-media-item" href="https://github.com/{{@custom.github_account}}" target="_blank" rel="noopener noreferrer" aria-label="Github">
+                        {{> "icons/github"}}
+                    </a>
+                {{/if}}
+                {{#if @custom.weibo_account}}
+                    <a class="social-item social-media-item" href="https://weibo.com/{{@custom.weibo_account}}" target="_blank" rel="noopener noreferrer" aria-label="Weibo">
+                        {{> "icons/weibo"}}
                     </a>
                 {{/if}}
             </div>
