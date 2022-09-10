@@ -16,6 +16,7 @@
 @import "blog/navigation.css";
 @import "blog/related.css";
 @import "blog/taxonomy.css";
+@import "blog/toc.css";
 @import "misc/tiny-slider.css";
 @import "misc/utils.css";
 @import "misc/portal.css";

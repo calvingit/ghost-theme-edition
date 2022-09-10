@@ -1,11 +1,20 @@
 {{!< default}}
 
 <main class="site-main">
-<aside class="gh-sidebar">
-    <div class="gh-toc"></div></aside> {{! The TOC will be inserted here }}
-    {{#post}}
+    <section class="gh-content gh-canvas">
+    <div class="post-full-content">
+        <aside class="toc-container">
+            <div class="toc"></div>
+        </aside>
+        <div class="post-content">
+             {{#post}}
         {{> "content" width="wide"}}
     {{/post}}
+        </div>
+    </div>
+</section>
+
+
 
     {{#if @custom.show_related_posts}}
         {{> "related-posts"}}
