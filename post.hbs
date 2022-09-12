@@ -2,19 +2,17 @@
 
 <main class="site-main">
     <section class="gh-content gh-canvas">
-    <div class="post-full-content">
-        <aside class="toc-container">
-            <div class="toc"></div>
-        </aside>
-        <div class="post-content">
-             {{#post}}
-        {{> "content" width="wide"}}
-    {{/post}}
+        <div class="post-full-content">
+            <aside class="toc-container">
+                <div class="toc"></div>
+            </aside>
+            <div class="post-content">
+                {{#post}}
+                    {{> "content" width="wide"}}
+                {{/post}}
+            </div>
         </div>
-    </div>
-</section>
-
-
+    </section>
 
     {{#if @custom.show_related_posts}}
         {{> "related-posts"}}

@@ -99,6 +99,7 @@
 .single-footer-title {
     margin-bottom: 1rem;
     font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .single-footer-top + .single-footer-bottom {
