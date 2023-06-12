@@ -8,8 +8,6 @@
 
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
     {{ghost_head}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha256-GxX+KXGZigSK67YPJvbu12EiBx257zuZWr0AMiT1Kpg=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.19.0/dist/tocbot.css" integrity="sha256-YvbV9KdwRjsyPUZqF25TYIAAps5V63lkNv+XsW868G8=" crossorigin="anonymous">
 </head>
 
 <body class="{{body_class}} is-head-b--n--a{{{block "body_class"}}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}{{^is "home"}}{{#if @site.cover_image}} is-head-brand{{/if}}{{/is}}">
@@ -106,7 +104,6 @@
 </script>
 
 <script src="{{asset "built/main.min.js"}}"></script>
-<script src="https://cdn.jsdelivr.net/npm/tocbot@4.19.0/dist/tocbot.min.js" integrity="sha256-06vqtkhLxTC77dM5PibSRurLFLs23Oph8FsL7EvaunI=" crossorigin="anonymous"></script>
 <script>
     tocbot.init({
         tocSelector: '.toc',
